@@ -31,8 +31,6 @@
 
 #include "SurfaceFlinger.h"
 #include "Layer.h"
-#include <vendor/display/config/1.1/IDisplayConfig.h>
-#include <vendor/display/config/1.2/IDisplayConfig.h>
 
 namespace android {
 
@@ -51,7 +49,6 @@ protected:
     virtual void handleMessageRefresh();
     virtual ~ExSurfaceFlinger();
 
-    android::sp<vendor::display::config::V1_2::IDisplayConfig> mDisplayConfig;
     bool mDebugLogs;
     bool isDebug() { return mDebugLogs; }
     bool mDisableExtAnimation;
